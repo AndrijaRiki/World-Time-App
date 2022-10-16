@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+body {
+    background-image: url("worldtimebg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#head h1 {
+    position: relative;
+    top: -180px;
+    color: white;
+    font-size: 90pt;
+    stroke: black 5px;
+    text-shadow: 0px 4px 4px black;
+    text-align: center;
+}
+#head h2 {
+    position: relative;
+    top: -190px;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    text-shadow: 0px 2px 2px black;
+}
+form {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+label {
+    margin-right: 100px;
+    font-size: 20pt;
+    font-weight: 600;
+}
+form #chose {
+    font-size: 15pt;
+    position: relative;
+    top: -15px;
+    margin: 0 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+#countrySearched {
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    top: -15px;
+    padding: 20px;
+    font-size: 18pt;
+    font-weight: 500;
+    border: none;
+}
+#popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 50px;
+    background-image: url("morning.jfif");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0,1) 1000px inset;
+    transition: .5s;
+    display: none;
+}
+#popup h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60pt;
+    width: 100%;
+    text-align: center;
+}
+#close {
+    position: absolute;
+    font-size: 25pt;
+    right: 25px;
+    top: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
